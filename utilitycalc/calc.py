@@ -54,7 +54,7 @@ def calculate():
         rounded_total += share
         print "\t\t %s:" % i
         print "\t\t\t Start Date: %s" % config.shares[i]['startDate'].__str__()
-        print "\t\t\t End Date  : %s" % config.shares[i]['startDate'].__str__()
+        print "\t\t\t End Date  : %s" % config.shares[i]['endDate'].__str__()
         print "\t\t\t Days      : %s" % config.shares[i]['days']
         print "\t\t\t Share     : $%s" % share
         print ""
