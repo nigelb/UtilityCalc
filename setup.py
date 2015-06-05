@@ -17,11 +17,13 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-from setuptools import setup
+from setuptools import setup, find_packages
+
 setup(name='Utility Calculator',
-entry_points = {
-                   'console_scripts': [
-                       'utility-calc = utilitycalc.calc:calculate',
-                       ],
-                   },
-)
+      packages=find_packages(),
+      entry_points={
+          'console_scripts': [
+              'utility-calc = utilitycalc.calc:calculate',
+          ],
+      },
+      )
