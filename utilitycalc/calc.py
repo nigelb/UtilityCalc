@@ -41,6 +41,7 @@ def calculate():
     print ""
     print "\t Start Date              : %s" % config.startDate.__str__()
     print "\t End Date                : %s" % config.endDate.__str__()
+    print "\t Days Billed             : %s" % config.billing_days.__str__()
     print "\t Bill Total              : %s" % config_data['total']
     print "\t Person Days             : %s" % config.get_people_days()
     print "\t Price per person per day: %s" % price_per_person_per_day

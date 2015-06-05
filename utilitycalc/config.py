@@ -30,6 +30,7 @@ class UtilityConfig:
         self.endDate = createDate(config_data['endDate'])
         self.shares = {}
         self.people_days = 0
+        self.billing_days = (self.endDate - self.startDate).days
         for i in config_data['shares']:
             self.shares[i] = share = {}
             if 'endDate' in config_data['shares'][i]:
